@@ -1,0 +1,115 @@
+
+.uc_elegant_carousel *{
+	margin:0;
+	padding:0;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+.uc_elegant_carousel .uc_carousel
+{
+	margin:0 auto;
+}
+
+.uc_elegant_carousel .uc_elegant_carousel_container_holder
+{
+	font-family: 'Droid Serif', serif;
+	font-size:16px;
+	line-height:24px;
+	overflow:hidden;
+	color:#8a8a8a;
+	font-weight:400;
+	display:inline-block;
+	background-color:#ffffff;
+    margin: 0 0px 30px;
+	float:left;
+	box-shadow:#e8ebee 0px 5px 10px;     
+	position:relative;
+	width:100%;
+}
+
+.uc_elegant_carousel .owl-carousel .owl-stage-outer{ overflow:hidden;}
+
+.uc_elegant_carousel .uc_elegant_carousel_content h2
+{
+	font-size:25px;
+	font-weight:700;
+	margin-bottom:17px;
+}
+
+.uc_elegant_carousel .uc_elegant_carousel_content
+{
+	padding:30px 50px 20px;
+	
+}
+
+.uc_elegant_carousel .uc_elegant_carousel_content p
+{
+	margin-bottom:4px;
+	-webkit-transition: all 0.5s ease;
+	-moz-transition: all 0.5s ease;
+	-ms-transition: all 0.5s ease;
+	transition: all 0.5s ease;
+}
+
+.uc_elegant_carousel .uc_elegant_carousel_content:hover p
+{
+	color:#181818 !important;
+	border-color:#50dfa8 !important;
+}
+
+.uc_elegant_carousel .uc_elegant_carousel_content:hover .uc_more_btn
+{
+	color:#50dfa8 !important;
+	-webkit-transition: all 0.5s ease;
+	-moz-transition: all 0.5s ease;
+	-ms-transition: all 0.5s ease;
+	transition: all 0.5s ease;
+}
+
+.uc_elegant_carousel .uc_elegant_carousel_content:hover p
+{
+	color:#181818 !important;
+}
+
+.uc_elegant_carousel .uc_elegant_carousel_border
+{
+	height:4px;
+	display:block;
+	width:100px;
+	position:absolute;
+	left:50%;
+	top:0px;
+	margin-left:-50px;
+}
+
+.uc_elegant_carousel  .uc_elegant_carousel_placeholder
+{
+	background-color:#ffffff;
+}
+
+.uc_elegant_carousel  .uc_elegant_carousel_placeholder img
+{
+	width:100%;
+}
+
+.uc_elegant_carousel .uc_elegant_carousel_content .uc_more_btn {
+	font-family: 'Droid Serif', serif;
+	display:block;
+	font-size:16px;
+	text-decoration:none;
+}
+
+.uc_elegant_carousel .owl-dots{ overflow:hidden; display:block !important; text-align:center; margin-top:22px;}
+.uc_elegant_carousel .owl-dot { background-color:#c4c4cc; width:6px; height:6px; border-radius:50%; display:inline-block; margin:4px 15px 3px; }
+.uc_elegant_carousel .owl-dot.active { background-color:#333333; width:14px; height:14px; margin:0 15px; }
+
+
+.uc_elegant_carousel .owl-carousel.owl-drag .owl-item{ padding:0 0.2% 0;}
+
+
+
+
+
+

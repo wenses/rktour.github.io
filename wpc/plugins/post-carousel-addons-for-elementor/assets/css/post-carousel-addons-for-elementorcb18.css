@@ -1,0 +1,27 @@
+.eshuzu_post_carousel_section{position:relative; overflow-x: hidden; padding: 0;}
+.eshuzu_post_carousel_section .eshuzu_post_carousel_frame .esz_post_slide {display: flex;flex-wrap: wrap;}
+.eshuzu_post_carousel_section .eshuzu_post_carousel_frame .esz_post_slide .esz_slide_box {display: flex;flex-wrap: wrap;}
+.eshuzu_post_carousel_section .eshuzu_post_carousel_frame .esz_post_slide > *{width: 100%; max-width: 100%;}
+
+.esz_post_thumb{width: 100%;  position: relative; overflow: hidden;}
+.esz_post_thumb .esz_post_thumb_img{position: absolute; top: 0; left: 0; bottom: 0; right: 0; width: 100%; height: 100%; object-fit: cover; max-width: 100%;}
+.esz_post_slide .esz_post_excerpt p,
+.esz_post_slide .esz_post_title{margin-top: 0;}
+
+.eshuzu_post_carousel_frame{margin-bottom: 30px;}
+
+.carousel_nav{position: relative; margin: auto; z-index: 1; margin-top: 30px;}
+.carousel_nav .slick-arrow{display: inline-block; text-align: center;}
+.carousel_nav i{line-height: 1em; display: inline-block;}
+
+.eshuzu_post_carousel_section .slick-dots { display: flex; justify-content: center; list-style: none; margin: 0; padding: 0;}
+.eshuzu_post_carousel_section .slick-dots li button { font-size: 0; padding: 0; border: none; outline: none; display: inline-block}
+.eshuzu_post_carousel_section .slick-dots li button::before{content:''; display: inline-block; border-radius: 50%;}
+.eshuzu_post_carousel_section .slick-dots [type="button"]:active,
+.eshuzu_post_carousel_section .slick-dots button:hover:active,
+.eshuzu_post_carousel_section .slick-dots [type="button"]:focus,
+.eshuzu_post_carousel_section .slick-dots button:hover:focus,
+.eshuzu_post_carousel_section .slick-dots [type="button"]:hover,
+.eshuzu_post_carousel_section .slick-dots button:hover:hover { background: none; outline: none; border: none; }
+
+

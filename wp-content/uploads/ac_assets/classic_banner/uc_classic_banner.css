@@ -1,0 +1,53 @@
+
+.uc_classic_banner *{
+	margin:0;
+	padding:0;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+.uc_classic_banner .uc_container_holder{
+	background:rgba(0,0,0,0.4);
+	position:relative;
+	font-weight:400;
+	
+	margin:0 auto;
+	padding:70px 25px;
+	clear:both;
+	max-height: 290px;
+	overflow:hidden;
+}
+.uc_classic_banner .uc_left_text{
+	text-align:left;
+	padding-top:40px;
+}
+.uc_classic_banner .uc_left_text h3{
+	font-size:40px;
+	color:#fff;
+	font-weight:400;
+	padding:0;
+}
+.uc_classic_banner .uc_left_text span{
+	display:block;
+	font-size:21px;
+	color:#ffffff;
+	font-weight:400;
+	margin:0 0 16px 0;
+}
+.uc_classic_banner .uc_left_text a{
+	display:inline-block;
+	font-weight:400;
+	margin:0 0 20px 0;
+	border:2px solid #fff;
+	border-radius:40px;
+	padding:19px 25px;
+	font-size:16px;
+	color:#fff;
+	text-decoration:none;
+}
+
+.uc_classic_banner .uc_right_iphone{
+	float:right;
+	width:50%;
+	text-align:right;
+}

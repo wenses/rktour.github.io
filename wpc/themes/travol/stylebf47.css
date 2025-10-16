@@ -1,0 +1,74 @@
+/*Theme Name: Travol
+Theme URI: https://themeforest.net/item/travol-travel-agency-elementor-wordpress-theme/40010950
+Description: TRAVOL is perfect if you like a clean, modern and creative WordPress Theme. This WordPress Theme is ideal for travel agency, tour, travel website, tour operator, tourism, trip, destinations, adventure etc, and those who need an easy, attractive and effective way to share their work with clients.
+Version: 2.9.1
+Author: webRedox WordPress team
+Author URI: https://webredox.net/
+
+License:
+License URI:
+Tags: two-columns, custom-background, custom-colors, featured-images, theme-options
+Text Domain: travol
+*/
+
+.wp-caption{
+	margin-bottom: 1.75em;
+	max-width: 100%;
+}
+.wp-caption-text{
+	opacity: 1;
+	visibility: visible;
+	-webkit-transition: opacity 0.24s ease-in-out;
+	-moz-transition: opacity 0.24s ease-in-out;
+	transition: opacity 0.24s ease-in-out;
+}
+.sticky{
+	color: #000;
+}
+.gallery-caption{
+	opacity: 1;
+	visibility: visible;
+	-webkit-transition: opacity 0.24s ease-in-out;
+	-moz-transition: opacity 0.24s ease-in-out;
+	transition: opacity 0.24s ease-in-out;
+}
+.bypostauthor{
+	color:#fff;
+}
+.alignleft{
+    float: left;
+    margin-right: 20px;
+    margin-bottom: 20px;
+}
+.alignright{
+    display: block;
+    float: right;
+    margin-left: 20px;
+    margin-bottom: 20px;
+	clear:both;
+}
+.aligncenter{
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    clear: both;
+    margin-bottom: 20px;
+}
+.screen-reader-text {
+	clip: rect(1px, 1px, 1px, 1px);
+	height: 1px;
+	overflow: hidden;
+	position: absolute !important;
+	width: 1px;
+	word-wrap: normal !important;
+}
+.screen-reader-text:focus {
+	color:#000;	
+}
+.wp-block-image.alignfull img, 
+.wp-block-image.alignwide img {
+    width: 100%;
+}
+.tt-blog-post-tags{
+	clear:both;
+}

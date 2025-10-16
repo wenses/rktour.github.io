@@ -1,0 +1,14 @@
+.iff {
+    width: 100%;
+    height: 100%; /* Default for larger screens (PCs) */
+    border: none;
+    display: block;
+    background: #f8f8f8; /* Match your site’s footer background */
+}
+
+/* Media query for mobile devices (typically screens smaller than 768px) */
+@media screen and (max-width: 767px) {
+    .iff {
+        height: 200%; /* Adjusted for mobile */
+    }
+}
