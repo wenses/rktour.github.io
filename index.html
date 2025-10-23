@@ -1063,6 +1063,7 @@ a img.aligncenter{
 			<p style="text-align: center; font-size: 18px!important; font-family: 'Century Gothic';">Jambo, Welcome to Tanzania Discover a new standard of travel with our ethical adventure tours. At Reveal Kilimanjaro Tours, we redefine the journey, prioritising your comfort and local communities' well-being. Our team of experienced travel consultants ensures that every aspect of your adventure is seamlessly organized, freeing you to immerse yourself in unforgettable experiences. </p>
 <p style="text-align: center; line-height: 150%;" align="center"><strong><span style="font-size: 14.0pt; line-height: 150%; font-family: 'Century Gothic',serif;">“<span style="color: maroon;"><label class="playwrite-de-sas-myfont1">Experience the summit of Kilimanjaro</label></span>”</span></strong><br>
 <iframe src="part1.html" class="p1c"></iframe><br>
+<iframe src="additional.html" class="p3c"></iframe><br>
 </p>
 
 		</div>
@@ -1074,7 +1075,7 @@ a img.aligncenter{
 
 <div class="vc_row-full-width vc_clearfix"></div><div data-vc-full-width="true" data-vc-full-width-init="false" data-vc-stretch-content="true" class="vc_row wpb_row vc_row-fluid">
 
-<div class="main-container">
+<div class="main-container3">
 
 	<div class="wpb_column vc_column_container vc_col-sm-4 vc_col-has-fill"><div class="vc_column-inner vc_custom_1673420114805"><div class="wpb_wrapper">				<div class="ult-banner ult-banner-va-bottom" style="width:300px;height:300px;">
 					<a class="ult-banner-link" href="package4/index.html" target="_self"></a>
@@ -2088,6 +2089,15 @@ We are deeply grateful for this unforgettable journey. Thank you, Joshua, for ma
   border: 1px solid #ccc
 }
 
+    .p3c {
+  width: 100%; /* Use 100% width for responsiveness */
+  max-width: 1900px; /* Maintain max width for larger screens */
+  height: 550px; /* Default height for larger screens */
+  overflow: hidden; /* Remove scrollbars from container */
+  border: 1px solid #ccc; /* Optional: for visibility */
+}
+
+
 
 .playwrite-de-sas-myfont1 {
   font-family: "Playwrite DE SAS", cursive;
@@ -2102,11 +2112,15 @@ We are deeply grateful for this unforgettable journey. Thank you, Joshua, for ma
     height: 150vh; /* Use viewport height for mobile */
     width: 100%; /* Ensure full width on mobile */
   }
+  .p3c{
+  	height:150vh;
+  	width:100%;
+  }
 }
 
 .main-container {
             display: grid;
-            grid-template-columns: repeat(4, 1fr);
+            grid-template-columns: repeat(5, 1fr);
             gap: 0px;
             padding: 0px;
             max-width: 4000px;
@@ -2118,7 +2132,7 @@ We are deeply grateful for this unforgettable journey. Thank you, Joshua, for ma
         }
        .main-container2 {
             display: grid;
-            grid-template-columns: repeat(3, 1fr);
+            grid-template-columns: repeat(6, 1fr);
             gap: 0px;
             padding: 0px;
             max-width: 4000px;
@@ -2128,6 +2142,19 @@ We are deeply grateful for this unforgettable journey. Thank you, Joshua, for ma
             scrollbar-color: #811a18 #f1f1f1;
             margin:0 auto;
         }
+        .main-container3 {
+            display: grid;
+            grid-template-columns: repeat(7, 1fr);
+            gap: 0px;
+            padding: 0px;
+            max-width: 4000px;
+            overflow-x: auto;
+            scroll-snap-type: x mandatory;
+            scrollbar-width: thin;
+            scrollbar-color: #811a18 #f1f1f1;
+            margin:0 auto;
+        }
+
         .photo-div {
             background-color: #f0f0f0;
             height: 200px;
@@ -2152,6 +2179,12 @@ We are deeply grateful for this unforgettable journey. Thank you, Joshua, for ma
             }
 
             .main-container2{
+                grid-template-columns: 1fr; /* Single column for vertical stacking */
+        overflow-x: hidden; /* Disable horizontal scroll */
+        scroll-snap-type: none; /* Disable scroll snap */
+        max-width: 100%;
+            }
+            .main-container3{
                 grid-template-columns: 1fr; /* Single column for vertical stacking */
         overflow-x: hidden; /* Disable horizontal scroll */
         scroll-snap-type: none; /* Disable scroll snap */

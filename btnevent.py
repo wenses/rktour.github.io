@@ -17,9 +17,11 @@ def act(filename):
 
 	
 #act("index_testing.html")
+os.chdir("request-a-quote")
+act("i0.html")
 print("Complete")
 
-
+'''
 def driver1(filename):
 
 	try:
@@ -43,4 +45,4 @@ print(files)
 
 
 for file in files:
-	driver1(file)
+	driver1(file)'''

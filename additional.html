@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wildland Trekking</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playwrite+DE+SAS:wght@100..400&display=swap" rel="stylesheet">
+    <style>
+        /* -------------------------------------------------
+           Reset & Base
+        ------------------------------------------------- */
+        *, *::before, *::after { margin:0; padding:0; box-sizing:border-box; }
+
+        html, body { height:100%; overflow-y:hidden; }   /* no vertical scroll */
+
+        body {
+            font-family: 'Helvetica Neue', Arial, sans-serif;
+            background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 100 100"><path fill="none" stroke="%23f5f5f5" stroke-width="0.5" d="M0,50 Q25,30 50,50 T100,50 M0,30 Q25,50 50,30 T100,30 M0,70 Q25,50 50,70 T100,70"/></svg>') repeat;
+            background-size: 100px 100px;
+            color: #333;
+            line-height: 1.6;
+            padding: 30px 20px;
+        }
+
+        .playwrite-de-sas-myfont1 {
+      font-family: "Playwrite DE SAS", cursive;
+      font-optical-sizing: auto;
+      font-weight: 300;
+      font-style: normal;
+    }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        /* -------------------------------------------------
+           Headings
+        ------------------------------------------------- */
+        .main-title {
+            font-size: 2.2rem;
+            font-weight: bold;
+            margin-bottom: .8rem;
+            color: #811a18;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .subtitle {
+            font-size: 1.2rem;
+            color: #555;
+            margin-bottom: 2rem;
+            max-width: 800px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        /* -------------------------------------------------
+           Horizontal scrolling wrapper
+        ------------------------------------------------- */
+        .features-wrapper {
+            overflow-x: hidden;               /* horizontal scroll when needed */
+            overflow-y: hidden;
+            -webkit-overflow-scrolling: touch;
+            padding-bottom: 1rem;           /* tiny space for mobile */
+        }
+
+        .features {
+            display: flex;
+            gap: 1.5rem;
+            padding: 0 1rem;
+            min-width: max-content;         /* forces the row to stay wide */
+        }
+
+        .feature {
+            flex: 0 0 280px;                /* fixed width per card */
+            background: rgba(255,255,255,0.9);
+            padding: 1.6rem;
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+            text-align: left;
+            background-color:#1a1a1a;
+        }
+
+        .feature-icon {
+            width: 50px;
+            height: 50px;
+            margin-bottom: .8rem;
+            filter: hue-rotate(30deg) saturate(1.2);
+        }
+
+        .feature-title {
+            font-size: 1.35rem;
+            margin-bottom: .6rem;
+            color: white;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .feature p {
+            font-size: .95rem;
+            color: white;
+            line-height: 1.6;
+        }
+
+        /* -------------------------------------------------
+           CTA button
+        ------------------------------------------------- */
+        .cta-button {
+            display: inline-block;
+            background:#5d7a3a;
+            color:#fff;
+            padding:12px 28px;
+            font-size:1.1rem;
+            font-weight:bold;
+            text-decoration:none;
+            border-radius:4px;
+            margin-top:2rem;
+            transition:background .3s ease;
+            text-transform:uppercase;
+            letter-spacing:.5px;
+        }
+        .cta-button:hover { background:#4a632d; }
+
+        /* -------------------------------------------------
+           Responsive tweaks
+        ------------------------------------------------- */
+        @media (max-width: 768px) {
+            .main-title   { font-size:2.2rem; }
+            .feature      { flex:0 0 240px; }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 class="main-title playwrite-de-sas-myfont1">Reveal Kilimanjaro Tours</h1>
+        <h2 class="playwrite-de-sas-myfont1" style="color:black;">Four key factors set us apart from other adventure and hiking companies.</h2>
+
+        <div class="features-wrapper">
+            <div class="features">
+                <!-- All Inclusive Trips -->
+                <div class="feature">
+                    <img src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64' fill='%23811a18'><path d='M32 2L8 18v28l24 16 24-16V18L32 2zm0 6.1L50.1 20 32 31.9 13.9 20 32 8.1zm-22 13.8L26.1 32 10 44.1V21.9zm2.8 24.2L28.9 32 32 34.1l3.1-2.1L51.2 44.1 32 54.1 12.8 46.1zM54 21.9v22.2L37.9 32 54 21.9z'/></svg>" alt="All Inclusive" class="feature-icon">
+                    <h3 class="feature-title">All Inclusive Trips</h3>
+                    <p>Wildland hiking tours allow guests to focus 100% on the hiking experience. We provide all gear, meals, transportation, professional guides, permits, fees and much more!</p>
+                </div>
+
+                <!-- World‑Class Destinations -->
+                <div class="feature">
+                    <img src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64' fill='%23811a18'><path d='M32 2C15.8 2 2 15.8 2 32s13.8 30 30 30 30-13.8 30-30S48.2 2 32 2zm0 54c-13.3 0-24-10.7-24-24s10.7-24 24-24 24 10.7 24 24-10.7 24-24 24zM32 16c-8.8 0-16 7.2-16 16s7.2 16 16 16 16-7.2 16-16-7.2-16-16-16zm0 26c-5.5 0-10-4.5-10-10s4.5-10 10-10 10 4.5 10 10-4.5 10-10 10z'/></svg>" alt="Destinations" class="feature-icon">
+                    <h3 class="feature-title">World‑Class Destinations</h3>
+                    <p>Our trip diversity allows you to enjoy the world’s inspiring landscapes in a variety of ways and at different times in your life, and we hope you’ll sample them all!</p>
+                </div>
+
+                <!-- Small Groups -->
+                <div class="feature">
+                    <img src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64' fill='%23811a18'><path d='M32 32c6.6 0 12-5.4 12-12s-5.4-12-12-12-12 5.4-12 12 5.4 12 12 12zm0-20c4.4 0 8 3.6 8 8s-3.6 8-8 8-8-3.6-8-8 3.6-8 8-8zm12 24c-4.4 0-8 3.6-8 8s3.6 8 8 8 8-3.6 8-8-3.6-8-8-8zm-24 0c-4.4 0-8 3.6-8 8s3.6 8 8 8 8-3.6 8-8-3.6-8-8-8zm16 4c2.2 0 4 1.8 4 4s-1.8 4-4 4-4-1.8-4-4 1.8-4 4-4zm-16 0c2.2 0 4 1.8 4 4s-1.8 4-4 4-4-1.8-4-4 1.8-4 4-4zm12 8c-6.6 0-12 5.4-12 12h-8c0-8.8 7.2-16 16-16 4.4 0 8.4 1.8 11.3 4.7l-4.7 4.7c-1.5-1.5-3.6-2.4-6.6-2.4z'/></svg>" alt="Small Groups" class="feature-icon">
+                    <h3 class="feature-title">Small Groups</h3>
+                    <p>Our hiking trips are always small group adventures, typically 4‑12 people per trip. Join a personalized trekking vacation that prioritizes quality of experience above all else.</p>
+                </div>
+
+                <!-- Best Guides -->
+                <div class="feature">
+                    <img src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64' fill='%23811a18'><path d='M32 18c-7.7 0-14 6.3-14 14s6.3 14 14 14 14-6.3 14-14-6.3-14-14-14zm0 24c-5.5 0-10-4.5-10-10s4.5-10 10-10 10 4.5 10 10-4.5 10-10 10zm14-20h4v4h-4v-4zm-28 0h4v4h-4v-4zm22.6-8.6l2.8-2.8 2.8 2.8-2.8 2.8-2.8-2.8zm-17.2 0l-2.8-2.8 2.8-2.8 2.8 2.8-2.8 2.8zM32 6c1.1 0 2 .9 2 2v4c0 1.1-.9 2-2 2s-2-.9-2-2V8c0-1.1.9-2 2-2zm0 44c-1.1 0-2 .9-2 2v4c0 1.1.9 2 2 2s2-.9 2-2v-4c0-1.1-.9-2-2-2z'/></svg>" alt="Best Guides" class="feature-icon">
+                    <h3 class="feature-title">The Best Guides in the Industry</h3>
+                    <p>These extraordinary men and women have the ability to turn a great get‑away into an unforgettable, inspiring – and sometimes truly life‑changing – adventure.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
