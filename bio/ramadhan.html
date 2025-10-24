@@ -1158,6 +1158,49 @@ a img.aligncenter{
       margin-bottom: 0;
     }
 
+
+    .bio-photos {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+      gap: 12px;
+      margin: 20px 0;
+      padding: 16px;
+      background: #f8f5f0;
+      border-radius: 10px;
+      overflow-x: auto;
+      scroll-behavior: smooth;
+    }
+
+    .bio-photos img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      border-radius: 8px;
+      box-shadow: 0 3px 8px rgba(0,0,0,0.1);
+      transition: transform 0.3s ease;
+      cursor: pointer;
+    }
+
+    .bio-photos img:hover {
+      transform: scale(1.08);
+      z-index: 1;
+    }
+
+    /* Hide scrollbar but keep functionality */
+    .bio-photos::-webkit-scrollbar {
+      height: 6px;
+    }
+
+    .bio-photos::-webkit-scrollbar-track {
+      background: #eee;
+      border-radius: 3px;
+    }
+
+    .bio-photos::-webkit-scrollbar-thumb {
+      background: #ccc;
+      border-radius: 3px;
+    }
+
     /* Back Link */
     .back-link {
       text-align: center;
@@ -1203,6 +1246,12 @@ a img.aligncenter{
 
 
         </p>
+        <div class="bio-photos">
+          <img src="food1.jpg" alt="Luca in Serengeti">
+          <img src="food02.jpg" alt="Luca with team">
+          <img src="food03.jpg" alt="Sunset in Tanzania">
+          <img src="food4.jpg" alt="Wildlife encounter">
+        </div>
       </div>
     </div>
 
@@ -1553,6 +1602,25 @@ a img.aligncenter{
       display: block;
       background: #f8f8f8; /* Match your site’s footer background */
     }
+    .main-container {
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            gap: 20px;
+            padding: 10px;
+            max-width: 4000px;
+            overflow-x: auto;
+            scroll-snap-type: x mandatory;
+            scrollbar-width: thin;
+            scrollbar-color: #811a18 #f1f1f1;
+            margin:0 auto;
+        }
+        @media (max-width: 768px) {
+            .main-container{
+                grid-template-columns: 1fr; /* Single column for vertical stacking */
+        overflow-x: hidden; /* Disable horizontal scroll */
+        scroll-snap-type: none; /* Disable scroll snap */
+        max-width: 100%;
+            }
 </style>
 <link rel="stylesheet" href="../footer_style.css"><iframe src="../nft2.html" class="iff" scrolling="no"></iframe>
 	
