@@ -11,7 +11,7 @@
         ------------------------------------------------- */
         *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
 
-        html, body { height: 100%; }
+        html, body { height: 100%; /* Removed overflow-y: hidden */ }
 
         body {
             font-family: 'Helvetica Neue', Arial, sans-serif;
@@ -61,7 +61,8 @@
         ------------------------------------------------- */
         .features-wrapper {
             overflow-x: hidden;
-            overflow-y: auto;
+            overflow-y: auto; /* Changed to auto for vertical scrolling */
+            -webkit-overflow-scrolling: touch;
             padding-bottom: 1rem;
         }
 
