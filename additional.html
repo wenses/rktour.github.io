@@ -9,9 +9,9 @@
         /* -------------------------------------------------
            Reset & Base
         ------------------------------------------------- */
-        *, *::before, *::after { margin:0; padding:0; box-sizing:border-box; }
+        *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
 
-        html, body { height:100%; overflow-y:hidden; }   /* no vertical scroll */
+        html, body { height: 100%; }
 
         body {
             font-family: 'Helvetica Neue', Arial, sans-serif;
@@ -19,15 +19,15 @@
             background-size: 100px 100px;
             color: #333;
             line-height: 1.6;
-            padding: 30px 20px;
+            padding: 20px 15px;
         }
 
         .playwrite-de-sas-myfont1 {
-      font-family: "Playwrite DE SAS", cursive;
-      font-optical-sizing: auto;
-      font-weight: 300;
-      font-style: normal;
-    }
+            font-family: "Playwrite DE SAS", cursive;
+            font-optical-sizing: auto;
+            font-weight: 300;
+            font-style: normal;
+        }
 
         .container {
             max-width: 1200px;
@@ -41,7 +41,7 @@
         .main-title {
             font-size: 2.2rem;
             font-weight: bold;
-            margin-bottom: .8rem;
+            margin-bottom: 0.8rem;
             color: #811a18;
             text-transform: uppercase;
             letter-spacing: 1px;
@@ -57,42 +57,41 @@
         }
 
         /* -------------------------------------------------
-           Horizontal scrolling wrapper
+           Features wrapper
         ------------------------------------------------- */
         .features-wrapper {
-            overflow-x: hidden;               /* horizontal scroll when needed */
-            overflow-y: hidden;
-            -webkit-overflow-scrolling: touch;
-            padding-bottom: 1rem;           /* tiny space for mobile */
+            overflow-x: hidden;
+            overflow-y: auto;
+            padding-bottom: 1rem;
         }
 
         .features {
             display: flex;
             gap: 1.5rem;
             padding: 0 1rem;
-            min-width: max-content;         /* forces the row to stay wide */
+            min-width: max-content;
         }
 
         .feature {
-            flex: 0 0 280px;                /* fixed width per card */
-            background: rgba(255,255,255,0.9);
+            flex: 0 0 280px;
+            background: rgba(255, 255, 255, 0.9);
             padding: 1.6rem;
             border-radius: 8px;
-            box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
             text-align: left;
-            background-color:#1a1a1a;
+            background-color: #1a1a1a;
         }
 
         .feature-icon {
             width: 50px;
             height: 50px;
-            margin-bottom: .8rem;
+            margin-bottom: 0.8rem;
             filter: hue-rotate(30deg) saturate(1.2);
         }
 
         .feature-title {
             font-size: 1.35rem;
-            margin-bottom: .6rem;
+            margin-bottom: 0.6rem;
             color: white;
             display: flex;
             align-items: center;
@@ -100,7 +99,7 @@
         }
 
         .feature p {
-            font-size: .95rem;
+            font-size: 0.95rem;
             color: white;
             line-height: 1.6;
         }
@@ -110,33 +109,88 @@
         ------------------------------------------------- */
         .cta-button {
             display: inline-block;
-            background:#5d7a3a;
-            color:#fff;
-            padding:12px 28px;
-            font-size:1.1rem;
-            font-weight:bold;
-            text-decoration:none;
-            border-radius:4px;
-            margin-top:2rem;
-            transition:background .3s ease;
-            text-transform:uppercase;
-            letter-spacing:.5px;
+            background: #5d7a3a;
+            color: #fff;
+            padding: 12px 28px;
+            font-size: 1.1rem;
+            font-weight: bold;
+            text-decoration: none;
+            border-radius: 4px;
+            margin-top: 2rem;
+            transition: background 0.3s ease;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
         }
-        .cta-button:hover { background:#4a632d; }
+        .cta-button:hover { background: #4a632d; }
 
         /* -------------------------------------------------
            Responsive tweaks
         ------------------------------------------------- */
         @media (max-width: 768px) {
-            .main-title   { font-size:2.2rem; }
-            .feature      { flex:0 0 240px; }
+            body {
+                padding: 15px 10px;
+                overflow-y: auto; /* Allow vertical scrolling on mobile */
+            }
+
+            .main-title {
+                font-size: 1.8rem;
+            }
+
+            .subtitle {
+                font-size: 1rem;
+                margin-bottom: 1.5rem;
+            }
+
+            .features-wrapper {
+                overflow-x: auto;
+                overflow-y: auto;
+            }
+
+            .features {
+                flex-direction: column; /* Stack cards vertically */
+                align-items: center;
+                min-width: auto; /* Remove min-width for mobile */
+            }
+
+            .feature {
+                flex: 0 0 auto; /* Allow cards to take full width */
+                width: 100%; /* Full width on mobile */
+                max-width: 500px; /* Cap width for larger mobile screens */
+            }
+
+            .cta-button {
+                font-size: 1rem;
+                padding: 10px 20px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .main-title {
+                font-size: 1.5rem;
+            }
+
+            .subtitle {
+                font-size: 0.9rem;
+            }
+
+            .feature {
+                padding: 1.2rem;
+            }
+
+            .feature-title {
+                font-size: 1.2rem;
+            }
+
+            .feature p {
+                font-size: 0.9rem;
+            }
         }
     </style>
 </head>
 <body>
     <div class="container">
         <h1 class="main-title playwrite-de-sas-myfont1">Reveal Kilimanjaro Tours</h1>
-        <h2 class="playwrite-de-sas-myfont1" style="color:black;">Four key factors set us apart from other adventure and hiking companies.</h2>
+        <h2 class="playwrite-de-sas-myfont1" style="color: black;">Four key factors set us apart from other adventure and hiking companies.</h2>
 
         <div class="features-wrapper">
             <div class="features">
