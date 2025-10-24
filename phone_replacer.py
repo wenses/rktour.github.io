@@ -3,13 +3,19 @@ import os
 
 
 def act(filename):
-	s1=''
+	s1='safari-tours/index.html'
+	s2='#'
 	
-	os.system(f"sed  -z 's|+255753425190|+255752425190|g' {filename} > i2.html")
+	os.system(f"sed  -z 's|{s1}|{s2}|g' {filename} > i2.html")
 	os.system(f"mv i2.html {filename}")
 
-	os.system(f"sed  -z 's|+255 753 425 190|+255 752 425 190|g' {filename} > i2.html")
+	s01=f'../{s1}'
+
+	os.system(f"sed  -z 's|{s01}|{s2}|g' {filename} > i2.html")
 	os.system(f"mv i2.html {filename}")
+
+
+
 
 
 def driver1(filename):
@@ -24,12 +30,14 @@ def driver1(filename):
 		act(file)
 		os.chdir('..')
 
-files=['index.html','index1.html','about-us/index.html','contact-us/index.html','contact-us/index2.html','package1/index.html','package1/index2.html','package1/index3.html',
+'''files=['index.html','index1.html','about-us/index.html','contact-us/index.html','contact-us/index2.html','package1/index.html','package1/index2.html','package1/index3.html',
 'package2/index.html','package2/index0.html','package2/index1.html','package2/index2.html','package2/index3.html','package3/index.html',
-'package4/index.html','package4/index11.html','package5/index.html','package6/index.html','package6/index1.html','package7/index.html','package8/index.html']
+'package4/index.html','package4/index11.html','package5/index.html','package6/index.html','package6/index1.html','package7/index.html','package8/index.html']'''
 
-files2=[f'routes/index{i}.html' for i in range(1,7)]
-for char in files2:files.append(char)
+files=['package7/index1.html','package7/index2.html','package7/index3.html','package7/index4.html']
+
+'''files2=[f'routes/index{i}.html' for i in range(1,7)]
+for char in files2:files.append(char)'''
 
 print(files)
 

@@ -1,0 +1,24 @@
+<iframe src="additional.html" class="p4c"></iframe>
+
+<style>
+	.p4c {
+  width: 100%; /* Full width for responsiveness */
+  max-width: 1200px; /* Reduced max-width for better mobile fit */
+  height: 1700px; /* Default height for larger screens */
+   /* Remove scrollbars from container */
+  border: 1px solid #ccc; /* Optional: for visibility */
+}
+
+@media (max-width: 768px) {
+  .p4c {
+    max-width: 100%; /* Remove max-width constraint on mobile */
+    height: 200vh; /* Smaller height for tablets and larger phones */
+  }
+}
+
+@media (max-width: 480px) {
+  .p4c {
+    height: 400vh; /* Even smaller height for smaller mobile screens */
+  }
+}
+</style>
