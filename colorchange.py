@@ -31,6 +31,8 @@ files=['index.html','index1.html','request-a-quote/index.html','about-us/index.h
 files2=[f'routes/index{i}.html' for i in range(1,7)]
 for char in files2:files.append(char)
 
+
+
 print(files)
 
 
