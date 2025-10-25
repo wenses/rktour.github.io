@@ -68,7 +68,7 @@
 }
 #mega-menu-wrap-primary-menu.mega-keyboard-navigation > li.mega-menu-item > a.mega-menu-link:focus {
   background: white;
-  color: #811a18;
+  color: #3D2316;
   font-weight: normal;
   text-decoration: none;
   border-color: #fff;
@@ -300,7 +300,7 @@
 @media only screen and (min-width: 769px) {
   #mega-menu-wrap-primary-menu #mega-menu-primary-menu > li.mega-menu-item > a.mega-menu-link:hover, #mega-menu-wrap-primary-menu #mega-menu-primary-menu > li.mega-menu-item > a.mega-menu-link:focus {
     background: white;
-    color: #811a18;
+    color: #3D2316;
     font-weight: normal;
     text-decoration: none;
     border-color: #fff;
@@ -308,7 +308,7 @@
 }
 #mega-menu-wrap-primary-menu #mega-menu-primary-menu > li.mega-menu-item.mega-toggle-on > a.mega-menu-link {
   background: white;
-  color: #811a18;
+  color: #3D2316;
   font-weight: normal;
   text-decoration: none;
   border-color: #fff;
@@ -321,7 +321,7 @@
 }
 #mega-menu-wrap-primary-menu #mega-menu-primary-menu > li.mega-menu-item.mega-current-menu-item > a.mega-menu-link, #mega-menu-wrap-primary-menu #mega-menu-primary-menu > li.mega-menu-item.mega-current-menu-ancestor > a.mega-menu-link, #mega-menu-wrap-primary-menu #mega-menu-primary-menu > li.mega-menu-item.mega-current-page-ancestor > a.mega-menu-link {
   background: white;
-  color: #811a18;
+  color: #3D2316;
   font-weight: normal;
   text-decoration: none;
   border-color: #fff;
@@ -643,7 +643,7 @@
 #mega-menu-wrap-primary-menu #mega-menu-primary-menu > li.mega-menu-megamenu > ul.mega-sub-menu {
   z-index: 999;
   border-radius: 0;
-  background: #811a18;
+  background: #3D2316;
   border: 0;
   padding: 0px 0px 0px 0px;
   position: absolute;

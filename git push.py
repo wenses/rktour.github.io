@@ -17,6 +17,6 @@ except:
 
 
 os.system("git add --all")
-os.system(f"git commit -m {commit_msg}")
+os.system(f'git commit -m "{commit_msg}"')
 os.system("git push origin master")
 os.system("pause")
